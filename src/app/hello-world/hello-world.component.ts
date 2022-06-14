@@ -7,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloWorldComponent implements OnInit {
   name: string = "Hello world"
+  bool = false
 
   constructor() { }
 
   ngOnInit(): void {
   }
   click(word : string){
-   this.name = word
+  if (this.bool == false){
+    this.name = word
+    this.bool = true
+  }
+  else{
+    this.name = "hello World"
+    this.bool = false
+  }
+   
   }
 
 }

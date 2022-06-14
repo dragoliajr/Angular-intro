@@ -1,1 +1,20 @@
 <p>{{pie}}</p>
+<div class = "table-responsive">
+    <table class = 'table tabled-bordered table-sm'>
+        <thead class = "thead-dark">
+            <tr>
+                <th></th>
+                <th>Type</th>
+                <th>charateristic</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor = "let pie of pies; let i = index; let e = even; let o = odd" [ngClass]="{even:e, odd:o}">
+            <td>{{i}}</td>
+            <td>{{pie.type}}</td>
+            <td>{{pie.charateristic}}</td>
+            
+        </tr>
+    </tbody>
+    </table>
+</div>
