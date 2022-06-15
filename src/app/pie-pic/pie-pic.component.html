@@ -1,0 +1,9 @@
+<h2>Input your pie order: </h2>
+<input type="text" [(ngModel)] = 'num' />
+<div [ngSwitch] = "num">
+    <div *ngSwitchCase = "1"> <img src = "assets/images/coconut.jpg "></div>
+    <div *ngSwitchCase="2"> <img src= "assets/images/apple.jpg"></div>
+    <div *ngSwitchCase="3"> <img src = "assets/images/key-lime.jpg"></div>
+
+</div>
+

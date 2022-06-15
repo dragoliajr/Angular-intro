@@ -1,0 +1,17 @@
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+a{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+    background-color: aqua;
+}
