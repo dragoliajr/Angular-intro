@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HelloWorldComponent implements OnInit {
   name: string = "Hello world"
   bool = false
+  showMe: boolean;
+  today : number = Date.now()
 
   constructor() { }
 

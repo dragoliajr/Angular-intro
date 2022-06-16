@@ -1,5 +1,10 @@
-
+.body{
+    display: flex;
+   
+}
 button{
+    display: flex;
     border-radius: 16px;
+   
 
 }

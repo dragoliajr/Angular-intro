@@ -1,3 +1,13 @@
 <p>{{name}}</p>
+<p> Today date is: {{ today | date }}</p>
+<button (click) = "click('By David Ragolia')" > click me</button>
+<div>
+    Show <input type="checkbox" [(ngModel)]="showMe" />
+</div>
 
-<button (click) = "click('pineapple')"> click me</button>
+<p *ngIf="showMe">
+    ShowMe is checked
+</p>
+<p *ngIf="!showMe">
+    ShowMe is unchecked
+</p>;
